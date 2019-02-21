@@ -1,0 +1,163 @@
+/*
+ * @Author: 杜梦 
+ * @Date: 2018-07-02 16:50:11 
+ * @Last Modified by: 杜梦
+ * @Last Modified time: 2018-07-02 18:43:41
+ */
+
+
+//  css请全部使用px  webpack会自动编译为rem  如果不想被编译请使用大写的PX
+.main{
+    width: 100%;
+    // padding: 0.15rem;
+    background: #f5f5f9;
+
+    // 编译后为.28rem
+    // font-size: 28px;
+
+    // 编译后为60PX
+    // line-height: 60PX;
+    .top{
+        padding: 0.2rem 0.24rem 0.2rem;
+        background: white;
+        margin-bottom: 0.1rem;
+        
+        .topleft{
+            display: flex;
+            position: relative;
+            .p{
+                
+                font-size: 0.36rem;
+                position:absolute;
+                height: 100%;
+                top:50%; 
+                left:50%;
+                transform:translate(-50%,-50%)
+            }
+            .search{
+                  position: absolute;
+                  top: 0.13rem;
+                  left: 0.3rem;
+                  img{
+                      width: 0.4rem;
+                      height: 0.4rem;
+                  }
+                 
+            }
+
+        }         
+    }
+    .address{
+        font-size: 0.24rem;
+        color:rgba(50,49,49,1);
+        height: 0.7rem;
+        line-height: 0.7rem; 
+        background: white;
+        border-bottom: 0.01rem solid #E5E5E5;
+        padding-left: 0.7rem;
+        p{
+            width: 5.56rem;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            float: left;
+        }
+        .xiala{
+            width: 0.19rem;
+            height: 0.12rem;
+            float: left;
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .tuijian{
+        background: white;
+        margin-bottom: 0.1rem;
+        padding-top: 0.26rem;
+        .vipcon2{
+            margin-top: 0.23rem;
+            dl{
+                display: flex;
+                padding-bottom: 0.2rem;
+                dt{
+                    width: 1.3rem;
+                    height: 1.3rem;
+                    margin-right: 0.2rem;
+                    margin-left: 0.24rem;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd{
+                    h5{
+                        font-size: 0.32rem;
+                        color: #1A1A19;
+                        padding-bottom: 0.2rem;
+                    }
+                    .divbox{
+                        span{
+                            font-size: 0.24rem;
+                            color: #6C6C6B;
+                            // padding-left: 0.1rem;
+                        }
+                        .xing{
+                            margin-bottom: 0.15rem;
+                            img{
+                                width: 0.23rem;
+                                height: 0.22rem;
+                            }    
+                        }
+                        .cut{
+                            margin-bottom: 0.15rem;
+                            img{
+                                width: 0.3rem;
+                                height: 0.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .product{
+            height: 3.16rem;
+            dl{
+                width: 33.333%;
+                float: left;
+                dt{
+                    width: 2.18rem;
+                    height: 2.18rem;
+                    margin: auto;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+                dd{
+                    padding-top: 0.17rem;
+                    padding-left: 0.2rem;
+                    p{
+                        font-size: 0.24rem;
+                        padding-bottom: 0.18rem;
+                        height: 0.45rem;
+                        width: 2.18rem;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    span{
+                        color: #FF6000;
+                        font-size: 0.24rem;
+                    }
+                    s{
+                        font-size: 0.2rem;
+                        color: #898989;
+                        padding-left: 0.1rem;
+                    }
+                }
+            }
+        }
+    }  
+}
